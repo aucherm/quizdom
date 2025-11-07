@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Quizdom</title>
+</head>
+
+<body>
+  <main class="container">
+    <section id="start-screen">
+      <h1>Bienvenue sur le Quizdom</h1>
+      <p>Meilleur score : <span id="best-score-home">0</span></p>
+      <button id="start-btn">Commencer</button>
+      <button id="replay-btn" hidden>Rejouer</button>
+    </section>
+
+
+    <section id="quiz" class="card" hidden>
+
+     
+
+      <div class="row space-between">
+        <p id="bestScore">Meilleur score : <span id="best-score-final">0</span></p>
+        <p id="progress">Question 1 / 1 — Score : 0</p>
+      </div>
+
+      <div id="timer"><strong>20</strong></div>
+
+       <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <h2 id="question-text">Chargement…</h2>
+
+      <div id="answers" class="answers"></div>
+
+      <p id="feedback" hidden></p>
+      <p id="explanation" class="explanation" hidden></p>
+
+      <div class="row">
+        <button id="next-btn" disabled>Question suivante</button>
+      </div>
+
+    </section>
+
+    <section id="end-screen" class="card hidden">
+      <h2>Résultat</h2>
+      <p>Ton score : <span id="current-score-final">0</span></p>
+      <p>Meilleur score : <span id="best-score-final">0</span></p>
+      <button id="restart-btn">Rejouer</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Quizdom — Créé par <strong>Maëlle Aucher</strong> & <strong>Mathis Rouet</strong> - Tous droits réservés.
+    </p>
+    <p> Maëlle
+      <a href="https://github.com/aucherm" target="_blank" class="icon-link" alt="lien vers page GitHub">
+        <i class="fa-brands fa-github fa-2x"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/maëlle-aucher-502646137/" target="_blank" class="icon-link"
+        alt="lien vers page LinkedIn">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </a>
+    </p>
+  </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
