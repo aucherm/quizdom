@@ -163,10 +163,12 @@ button:focus {
 
 
 .copyright {
+    font-size: 12px;;
     position: fixed;
     bottom: 0;
     text-align: center;
-    margin-left: 35%;
+    margin-left: 15px;
+    
 }
 
 @media (max-width: 768px) {
