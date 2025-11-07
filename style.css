@@ -225,7 +225,7 @@ button:focus {
     }
 
     #end-screen {
-        background-image: url("pictures/congratsm.jpeg");
+        background-image: url(pictures/congratsm.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
