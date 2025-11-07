@@ -18,23 +18,25 @@
       <p>Meilleur score : <span id="best-score-home">0</span></p>
       <button id="start-btn">Commencer</button>
       <button id="replay-btn" hidden>Rejouer</button>
+      <img src="quiz.png" alt="home image" id="home">
     </section>
 
+    
+    
 
     <section id="quiz" class="card" hidden>
 
-     
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
 
       <div class="row space-between">
         <p id="bestScore">Meilleur score : <span id="best-score-final">0</span></p>
         <p id="progress">Question 1 / 1 — Score : 0</p>
       </div>
 
-      <div id="timer"><strong>20</strong></div>
+      <div id="timer">20</div>
 
-       <div id="progress-container">
-        <div id="progress-bar"></div>
-      </div>
       <h2 id="question-text">Chargement…</h2>
 
       <div id="answers" class="answers"></div>
@@ -45,21 +47,16 @@
       <div class="row">
         <button id="next-btn" disabled>Question suivante</button>
       </div>
-
     </section>
-
     <section id="end-screen" class="card hidden">
       <h2>Résultat</h2>
       <p>Ton score : <span id="current-score-final">0</span></p>
       <p>Meilleur score : <span id="best-score-final">0</span></p>
       <button id="restart-btn">Rejouer</button>
     </section>
-
   </main>
-
   <footer>
-    <p>© 2025 Quizdom — Créé par <strong>Maëlle Aucher</strong> & <strong>Mathis Rouet</strong> - Tous droits réservés.
-    </p>
+    <p>© 2025 Quizdom — Créé par <strong>Maëlle Aucher</strong> & <strong>Mathis Rouet</strong> - Tous droits réservés.</p>
     <p> Maëlle
       <a href="https://github.com/aucherm" target="_blank" class="icon-link" alt="lien vers page GitHub">
         <i class="fa-brands fa-github fa-2x"></i>

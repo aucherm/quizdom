@@ -11,7 +11,6 @@ const explanationEl = document.getElementById("explanation");
 const feedbackEl = document.getElementById("feedback");
 const timerDisplay = document.getElementById("timer");
 const progressBarEl = document.getElementById("progress-bar");
-const startImage = "url('pictures/ca.png')";
 
 let quiz = [
   {

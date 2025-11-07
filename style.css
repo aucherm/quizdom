@@ -1,12 +1,12 @@
 :root {
     --color-bg: #2D3047;
     --color-text: #F2F2F2;
-    --color-btn: #120B40;
+    --color-btn: #404063;
     --color-btn-hover: #E0A458;
     --color-correct: #4caf50;
     --color-wrong: #f44336;
-    --color-progress: #873DC2;
-    --color-timer: #E23E85;
+    --color-progress: #4caf50;
+    --color-timer: #007bff;
     --font-main: 'Sour Gummy', sans-serif;
 }
 
@@ -17,8 +17,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-   background-size: cover;
-  background: url(pictures/back.png);
 }
 
 #home {
@@ -29,15 +27,6 @@ body {
     border-radius: 50px;
     padding: 30px;
 }
-
-#start-screen {
-background-image: url("pictures/start.png");
-background-repeat: no-repeat;
-background-size: cover;
-height: 90vh; 
-  width: 100%;
-}
-
 
 main {
     flex: 1;
@@ -64,7 +53,7 @@ body {
 }
 
 button {
-    background-color:#120B40; 
+    background-color: var(--color-btn);
     color: var(--color-text);
     padding: 15px;
     font-size: 18px;
@@ -75,7 +64,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(90deg, #E23E85, #873DC2);;
+    background-color: var(--color-btn-hover);
 }
 
 button:focus {
@@ -88,27 +77,25 @@ button:focus {
 }
 
 #progress-container {
-    width: 70%;
+    width: 80%;
     height: 10px;
     background: #ddd;
     border-radius: 5px;
     overflow: hidden;
     margin: 0 auto 10px;
-    padding: 5;
 }
 
 #progress-bar {
     height: 100%;
     width: 0%;
-    background: var(--color-progress);
+    background: #4caf50;
     transition: width 0.3s ease;
-    
 }
 
 #timer {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--color-timer);
+    color: #007bff;
     text-align: right;
     margin-right: 30px;
 }
@@ -118,6 +105,7 @@ button:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 20px;
+    background-color: #ccc;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 10px;
@@ -136,12 +124,13 @@ button:focus {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Sour Gummy', sans-serif;
-    background-color: rgba(18, 11, 64, 0.3);
+    background-color: #404063;
     color: #F2F2F2;
 
 }
 
 #answers .answer:hover {
+    background-color: #E0A458;
     transform: scale(1.03);
 }
 
@@ -157,7 +146,7 @@ button:focus {
 
 
 .results-visible {
-    color: #120B40;
+    color: #2D3047
 }
 
 @media (max-width: 768px) {
@@ -167,7 +156,7 @@ button:focus {
     }
 
     button {
-        background-color: #120B40;
+        background-color: #404063;
         color: var(--color-text);
         padding: 15px;
         font-size: 12px;
@@ -180,11 +169,14 @@ button:focus {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 13px;
+        background-color: #ccc;
         margin-right: auto;
         margin-left: auto;
     }
 
     #answers .answer {
+        background-color: var(--color-btn);
+        color: #F2F2F2;
         border-radius: 5px;
     }
 
