@@ -163,12 +163,13 @@ button:focus {
 
 
 .copyright {
-    font-size: 12px;;
+    font-size: 12px;
+    ;
     position: fixed;
     bottom: 0;
     text-align: center;
     margin-left: 15px;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -183,8 +184,12 @@ button:focus {
         height: 80vh;
     }
 
-    button {
+    #timer {
+        font-size: 1.2rem;
 
+    }
+
+    button {
         padding: 15px;
         font-size: 12px;
         border-radius: 20px;
@@ -201,7 +206,9 @@ button:focus {
     }
 
     #answers .answer {
+        padding: 20px;
         border-radius: 5px;
+        font-size: 15px;
     }
 
     .container {
@@ -213,9 +220,6 @@ button:focus {
         font-size: 15px;
     }
 
-    #answers .answer {
-        font-size: 15px;
-    }
 
     .copyright {
         position: fixed;
