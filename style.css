@@ -5,7 +5,7 @@
     --color-btn-hover: linear-gradient(90deg, #E23E85, #843DC3);
     --color-correct: #4caf50;
     --color-wrong: #f44336;
-    --color-progress: #843DC3;
+    --color-progress: linear-gradient(90deg, #E23E85, #843DC3);
     --color-timer: #E23E85;
     --font-main: 'Sour Gummy', sans-serif;
 }
@@ -154,6 +154,21 @@ button:focus {
     color: #2D3047
 }
 
+#end-screen {
+    background-image: url("pictures/congrats.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-left: 35%;
+}
+
 @media (max-width: 768px) {
 
     body {
@@ -163,7 +178,7 @@ button:focus {
     #start-screen {
         background-image: url("pictures/mobile.jpeg");
         background-size: cover;
-     height: 80vh;
+        height: 80vh;
     }
 
     button {
@@ -198,5 +213,19 @@ button:focus {
 
     #answers .answer {
         font-size: 15px;
+    }
+
+    .copyright {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    #end-screen {
+        background-image: url("pictures/congratsm.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
     }
 }
